@@ -46,7 +46,7 @@ static void i2c_init(void) {
 
     i2c_peripheral_disable(I2C1);
 
-    i2c_set_speed(I2C1, i2c_speed_fmp_1m, rcc_apb1_frequency / 1000000);
+    i2c_set_speed(I2C1, i2c_speed_fm_400k, rcc_apb1_frequency / 1000000);
 
     i2c_peripheral_enable(I2C1);
 }
